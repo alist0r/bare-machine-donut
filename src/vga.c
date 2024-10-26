@@ -5,6 +5,7 @@ static const uint32_t VGA_HIGHT = 200;
 uint8_t *term_buf  = (uint8_t*)(0xA0000); //graphics buffer loacation
 
 void term_init() {
+	//just in case i mean i dont need this line or func
 	term_buf  = (uint8_t*)(0xA0000);
 	return;
 }
