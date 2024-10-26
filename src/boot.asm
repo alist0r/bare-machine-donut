@@ -83,9 +83,6 @@ flush:
 	mov ds, ax
 	jmp protmode ;32 bits!
 protmode:
-	mov edi,0xb8000     ;memory maped grpahics
-	mov eax, 0x02490248 ;2 16bit words vga color then ascii char
-	stosd               ;HI
 	jmp 0x10000         ;jump into where i loaded _start
 ;makes sector bootable
 times 510 -($-$$) db 0
