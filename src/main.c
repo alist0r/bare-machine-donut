@@ -100,7 +100,6 @@ void fill_zbuffer(struct donutinfo donut, float angle) {
 			}
 		}
 	}
-	return;
 }
 
 uint8_t select_shade(float num) {
@@ -130,7 +129,6 @@ void draw_zbuffer() {
 			}
 		}
 	}
-	return;
 }
 
 void main() {
