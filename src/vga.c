@@ -7,12 +7,10 @@ uint8_t *term_buf  = (uint8_t*)(0xA0000); //graphics buffer loacation
 void term_init() {
 	//just in case i mean i dont need this line or func
 	term_buf  = (uint8_t*)(0xA0000);
-	return;
 }
 
 void put_pixel(uint8_t color, uint32_t row, uint32_t col) {
 	term_buf[col + (row * VGA_WIDTH)] = color;
-	return;
 }
 
 void fill_screen(uint8_t color) {
@@ -21,5 +19,4 @@ void fill_screen(uint8_t color) {
 			put_pixel(color, i, j);
 		}
 	}
-	return;
 }
